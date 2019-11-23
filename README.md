@@ -5,24 +5,33 @@
 Este repositório visa prover soluções para o desafio lógico
 fornecido pelo META.
 
+**OBS**: Os scripts foram escritos voltados para o **Python 3**, e não houve preocupação em fornecer
+suporte ao Python 2 ([Ver referência](https://pythonclock.org/)), porém talvez os mesmos
+funcionem. Todavia, não é garantido que para qualquer alteração futura os mesmos estarão funcionando
+para o Python 2.
+
 ## Instalação
 
-Faça download do Python e execute o seguinte comando:
+(Recomenda-se o uso de uma venv, para mais informações [clique aqui](https://docs.python.org/3/library/venv.html))
+
+Faça download do Python e crie um ambiente virtual e ative-o
+
+(O mesmo pode ser instalado através do [site oficial](https://www.python.org/downloads/).
+)
+
+```
+python -m venv env
+env/Scripts/activate  -- WINDOWS
+source env/bin/activate -- LINUX
+```
+
+Execute o seguinte comando:
 
 ```
 python -m pip install -r requirements.txt
 ```
 
-(Recomenda-se o uso de uma venv, para mais informações [clique aqui](https://docs.python.org/3/library/venv.html).)
-
-O mesmo pode ser instalado através do [site oficial](https://www.python.org/downloads/).
-
-Após o término da execução, o ambiente está pronto para executar os scripts
-
-**OBS**: Os scripts foram escritos voltados para o **Python 3**, e não houve preocupação em fornecer
-suporte ao Python 2 ([Ver referência](https://pythonclock.org/)), porém talvez os mesmos
-funcionem. Todavia, não é garantido que para qualquer alteração futura os mesmos estarão funcionando
-para o Python 2.
+Após o término da execução, o ambiente está pronto para executar os scripts.
 
 ## Execução
 
