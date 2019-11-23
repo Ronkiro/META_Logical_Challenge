@@ -21,6 +21,8 @@ def is_balanced(word):
     :type word: str
     :rtype str
     """
+    if not isinstance(word, str):
+        raise TypeError("Parâmetro 'word' deveria receber uma string.")
 
     brackets_de_abertura = tuple('({[')
     brackets_de_fechamento = tuple(')}]')
@@ -33,8 +35,4 @@ def is_balanced(word):
         elif char in brackets_de_fechamento:
             if not queue or char != queue.pop():
                 return "NÃO"
-    return "SIM" if not queue else "NAO"
-
-print("TESTE " + is_balanced("{[()]}"))
-print("TESTE " + is_balanced("{[(])}"))
-print("TESTE " + is_balanced("{{[[(())]]}}"))
+    return "SIM" if not queue else "NÃO"
